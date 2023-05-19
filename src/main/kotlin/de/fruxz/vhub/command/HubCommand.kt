@@ -43,7 +43,7 @@ object HubCommand {
                 Component.text("The hub server is not available.")
                     .color(NamedTextColor.RED)
                     .hoverEvent(
-                        Component.text("Server 'hub' or 'lobby' are not recognized.")
+                        Component.text("None of the configured servers are currently reachable!")
                             .color(NamedTextColor.GRAY)
                     )
             )
