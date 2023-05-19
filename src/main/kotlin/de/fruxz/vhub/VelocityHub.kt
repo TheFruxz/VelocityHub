@@ -2,6 +2,7 @@ package de.fruxz.vhub
 
 import com.velocitypowered.api.event.Subscribe
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent
+import com.velocitypowered.api.plugin.Dependency
 import com.velocitypowered.api.plugin.Plugin
 import com.velocitypowered.api.proxy.ProxyServer
 import com.velocitypowered.api.proxy.server.RegisteredServer
@@ -10,7 +11,13 @@ import java.util.logging.Logger
 import javax.inject.Inject
 import kotlin.jvm.optionals.getOrNull
 
-@Plugin(id = "vhub", name = "Velocity/hub", version = "1.0", authors = ["Fruxz"])
+@Plugin(
+    id = "vhub",
+    name = "Velocity/hub",
+    version = "1.0",
+    authors = ["Fruxz"],
+    dependencies = [Dependency(id = "mckotlin-velocity", optional = true)]
+)
 class VelocityHub @Inject constructor(
     val proxy: ProxyServer,
     val logger: Logger,
