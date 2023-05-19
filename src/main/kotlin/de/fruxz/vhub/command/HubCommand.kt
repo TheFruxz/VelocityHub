@@ -80,6 +80,7 @@ object HubCommand {
                         }
                         return@suggests builder.buildFuture()
                     }
+                    .requires { it.hasPermission("hub.command.hub.others") }
                     .executes { context ->
                         val source = context.source
                         val target = context.getArgument("player", String::class.java)
