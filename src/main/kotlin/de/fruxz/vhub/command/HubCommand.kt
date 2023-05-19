@@ -55,7 +55,7 @@ object HubCommand {
     fun create(proxy: ProxyServer): BrigadierCommand {
         val node = LiteralArgumentBuilder
             .literal<CommandSource>("hub")
-            .requires { it.hasPermission("hub.command.hub") }
+            .requires { it.hasPermission("vhub.command.hub") }
             .executes { context ->
                 val source = context.source
 
@@ -80,7 +80,7 @@ object HubCommand {
                         }
                         return@suggests builder.buildFuture()
                     }
-                    .requires { it.hasPermission("hub.command.hub.others") }
+                    .requires { it.hasPermission("vhub.command.hub.others") }
                     .executes { context ->
                         val source = context.source
                         val target = context.getArgument("player", String::class.java)
