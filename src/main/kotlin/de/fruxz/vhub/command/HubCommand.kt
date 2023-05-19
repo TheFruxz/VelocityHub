@@ -1,19 +1,16 @@
 package de.fruxz.vhub.command
 
 import com.mojang.brigadier.Command
-import com.mojang.brigadier.arguments.ArgumentType
 import com.mojang.brigadier.arguments.StringArgumentType
 import com.mojang.brigadier.builder.LiteralArgumentBuilder
 import com.mojang.brigadier.builder.RequiredArgumentBuilder
 import com.velocitypowered.api.command.BrigadierCommand
 import com.velocitypowered.api.command.CommandSource
-import com.velocitypowered.api.command.VelocityBrigadierMessage
 import com.velocitypowered.api.proxy.Player
 import com.velocitypowered.api.proxy.ProxyServer
 import de.fruxz.vhub.VelocityHub
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.format.NamedTextColor
-import java.util.*
 import kotlin.jvm.optionals.getOrNull
 
 object HubCommand {

@@ -1,6 +1,5 @@
 package de.fruxz.vhub
 
-import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.velocitypowered.api.event.Subscribe
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent
