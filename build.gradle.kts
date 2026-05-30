@@ -1,10 +1,10 @@
 plugins {
-    kotlin("jvm") version "1.8.21"
-    kotlin("kapt") version "1.8.21"
+    kotlin("jvm") version "2.4.0-RC2"
+    kotlin("kapt") version "2.4.0-RC2"
 }
 
 group = "de.fruxz.vhub"
-version = "1.0"
+version = "2.0"
 
 repositories {
     mavenCentral()
@@ -16,8 +16,8 @@ repositories {
 
 dependencies {
 
-    compileOnly("com.velocitypowered:velocity-api:3.1.1")
-    kapt("com.velocitypowered:velocity-api:3.1.1")
+    compileOnly("com.velocitypowered:velocity-api:3.5.0-20260528.100554-32")
+    kapt("com.velocitypowered:velocity-api:3.5.0-20260528.100554-32")
 
     testImplementation(kotlin("test"))
 }
@@ -27,5 +27,5 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(25)
 }

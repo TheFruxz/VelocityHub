@@ -1,6 +1,7 @@
 package de.fruxz.vhub
 
 import com.google.gson.GsonBuilder
+import com.google.inject.Inject
 import com.velocitypowered.api.event.Subscribe
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent
 import com.velocitypowered.api.plugin.Dependency
@@ -11,14 +12,13 @@ import de.fruxz.vhub.command.HubCommand
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.util.logging.Logger
-import javax.inject.Inject
 import kotlin.io.path.div
 import kotlin.jvm.optionals.getOrNull
 
 @Plugin(
     id = "vhub",
     name = "Velocity/hub",
-    version = "1.0",
+    version = "2.0",
     authors = ["Fruxz"],
     dependencies = [Dependency(id = "mckotlin-velocity", optional = true)]
 )

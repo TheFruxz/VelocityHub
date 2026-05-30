@@ -77,9 +77,9 @@ object HubCommand {
                         }
                         return@suggests builder.buildFuture()
                     }
-                    .requires { it.hasPermission("vhub.command.hub.others") }
+                    .requires { it?.hasPermission("vhub.command.hub.others") == true }
                     .executes { context ->
-                        val source = context.source
+                        val source = context.source ?: return@executes 0
                         val target = context.getArgument("player", String::class.java)
                         val targetPlayer = proxy.getPlayer(target).getOrNull()
 
